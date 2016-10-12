@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/subwayLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.baeuk.whereareyou.SubwayMapActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:hint="출발역"
+            android:textAlignment="center"
+            android:id="@+id/startStation"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:hint="도착역"
+            android:textAlignment="center"
+            android:id="@+id/destinationStation"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:text="검색"
+            android:textSize="16dp"
+            android:id="@+id/searchButton" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/plus"
+            android:id="@+id/zoomIn" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/minus"
+            android:id="@+id/zoomOut" />
+    </LinearLayout>
+
+    <com.example.baeuk.whereareyou.SubwayMap
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
